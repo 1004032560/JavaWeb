@@ -44,9 +44,7 @@ web 应用被称为 Web Application
 
 例如：Apache、Nginx、IIS（微软）
 
-（error）
-
-特点：使用浏览器访问 Web 站点或者 Web 应用必须通过 HTTP 服务器
+特点：使用浏览器访问 Web 站点或者 Web 应用，必须通过 HTTP 服务器
 
 ### Web 应用服务器：
 
@@ -105,13 +103,24 @@ Web 应用服务器，又称为 Servlet Container（Servlet 容器）
 ### Tomcat 安装：
 
 1. 进入官网
+
+![01](E:\1.soft\personalNotes\JavaWeb\images\20200427\01.png)
+
 2. 找到最新的版本
+
+![02](E:\1.soft\personalNotes\JavaWeb\images\20200427\02.png)
+
 3. 下载对应操作系统的压缩包
+
 4. 下载本地之后解压（解压时路径中不要含中文）
+
+![03](E:\1.soft\personalNotes\JavaWeb\images\20200427\03.png)
 
 ### Tomcat 目录结构：
 
-bin：用于存放 Tomcat 启动和停止等批处理脚本和 shell 脚本
+![04](E:\1.soft\personalNotes\JavaWeb\images\20200427\04.png)
+
+bin：用于存放 Tomcat 启动（startup.bat）和停止（startdown.bat）等批处理脚本和 shell 脚本
 
 conf：Tomcat 相关的配置文件
 
@@ -134,7 +143,7 @@ work：jsp 代码编译后生成的 class 目录
 
 ## 5、常见的 Servlet 容器简介
 
-常见的 Servlet 容器：JBoss、Resin、GlassFish 4
+常见的 Servlet 容器：JBoss、Resin、GlassFish 4、Tomcat
 
 补充：（付费，用于大型公司，电信产业）Weblogic、Websphere
 
