@@ -1,6 +1,16 @@
 ## 1、Eclipse 中配置 Tomcat
 
-Window --- preferences --- server --- runtime environments-add
+1. 在 Eclipse 中找到`Window --- preferences --- server --- runtime environments-add`
+2. 选择 `Tomcat9.0` 版本，点击 next 按钮
+
+
+
+
+
+## 2、Eclipse 中配置服务器
+
+1. 在 Eclipse 中找到`Window --- Show View --- Server`
+2. 底部工具栏中就会出现 Service
 
 
 
