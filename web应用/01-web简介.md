@@ -104,7 +104,7 @@ Web 应用服务器，又称为 Servlet Container（Servlet 容器）
 
 1. 进入官网
 
-![01](E:\1.soft\personalNotes\JavaWeb\images\20200427\01.png)
+![01](https://github.com/1004032560/JavaWeb/blob/master/images/20200427/01.png)
 
 2. 找到最新的版本
 
