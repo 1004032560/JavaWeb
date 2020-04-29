@@ -149,9 +149,9 @@ work：jsp 代码编译后生成的 class 目录
 
 ## 5、常见的 Servlet 容器简介
 
-常见的 Servlet 容器：JBoss、Resin、GlassFish 4、Tomcat
+**常见的 Servlet 容器：JBoss、Resin、GlassFish 4、Tomcat**
 
-补充：（付费，用于大型公司，电信产业）Weblogic、Websphere
+**补充：（付费，用于大型公司，电信产业）Weblogic、Websphere**
 
 ## 6、Servlet 概念及功能
 

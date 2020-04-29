@@ -30,13 +30,13 @@
 
 `<servlet-name>` 可以使用任意标识符，与 `<servlet-mapping>` 节点相关联
 
-`<servlet-class>` 是Servlet类的完整类名；
+`<servlet-class>` 是Servlet类的完整类名
 
 ### `<servlet-mapping>`节点
 
 包含元素 `<servlet-name>` 及 `<url-pattern>`
 
-其中 `<servlet-name>` 与已经定义的name对应，
+其中 `<servlet-name>` 与已经定义的name对应
 
 `<url-pattern>` 是逻辑 URL，非常非常重要，访问 Servlet 就使用这个 url-pattern
 
@@ -54,13 +54,23 @@
 
 
 
-## 6、Servlet 生命周期
+## 6、Servlet 特点
 
 ### Servlet 家谱
 
-二类二接口，3 + 2 方法
+**二类二接口，3 + 2 方法**
 
 HttpServlet 类和 GenericServlet 类；Servlet 接口和 ServletConfig 接口。
+
+Servlet 接口的三个方法：init(参数)、service、destroy
+
+ServletConfig 接口的两个方法：getInitParameter、getServletContext
+
+### Servlet 生命周期
+
+构造方法实例化 Servlet
+
+调用
 
 
 
