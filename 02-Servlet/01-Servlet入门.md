@@ -127,3 +127,24 @@ Servlet 的初始化参数只能在当前的 Servlet 中使用
 
 
 
+10、
+
+
+
+## 11、重要的请求头属性
+
+
+
+### 重要的请求头属性
+
+1. Content-Length：获得请求长度
+
+2. Accept：浏览器能够接受的 MIME
+
+   MIME：`Multipurpose Internet Mail Extensions` 多用途互联网邮件扩展
+
+   接受：
+
+   比如：`test/html`、`application/javascript`、`image/png`
+
+3. Referer：来路路径，代表网页从哪个页面转过来的
