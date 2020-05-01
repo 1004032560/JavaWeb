@@ -113,6 +113,13 @@ Servlet 的初始化参数只能在当前的 Servlet 中使用
 
 错误码
 
+~~~xml
+<error-page>
+	<exception-type>java.lang.NullPointerException</exception-type>
+	<location>/exception.html</location>
+<error-page>
+~~~
+
 
 
 异常类型
@@ -120,7 +127,8 @@ Servlet 的初始化参数只能在当前的 Servlet 中使用
 ~~~xml
 <error-page>
 	<exception-type>java.lang.NullPointerException</exception-type>
-<location>/exception.html</location>
+	<location>/exception.html</location>
+<error-page>
 ~~~
 
 
