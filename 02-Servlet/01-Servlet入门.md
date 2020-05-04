@@ -135,7 +135,33 @@ Servlet 的初始化参数只能在当前的 Servlet 中使用
 
 
 
-10、
+## 10、Servlet 获取请求头属性的方法
+
+客户端请求服务端的 Servlet 时，会传递给服务器一系列的 HTTP 请求头属性，
+
+请求接口中定义了系列方法获取请求属性；
+
+1. `java.lang.String getHeader(java.lang.String name)`
+
+返回某个请求请求头属性的值，值为 String 类型（常用）
+
+2. `java.util.Enumeration<java.lang.String> getHeaders(java.lang.String name)`
+
+返回指定名字的请求头属性的值，值为集合类型，一般用于一个名字对应多个值的情况
+
+3. `int getIntHeader(java.lang.String name)`
+
+返回值类型是 int 类型的请求头属性（常用）
+
+4. `long getDateHeader(java.lang.String name)`
+
+返回日期类型的请求头属性值，返回值类型为 long 型
+
+5. `java.util.Enumeration<java.lang.String> getHeaderNames()`
+
+返回所有请求头属性的名字
+
+
 
 
 
@@ -151,8 +177,24 @@ Servlet 的初始化参数只能在当前的 Servlet 中使用
 
    MIME：`Multipurpose Internet Mail Extensions` 多用途互联网邮件扩展
 
-   接受：
-
    比如：`test/html`、`application/javascript`、`image/png`
 
 3. Referer：来路路径，代表网页从哪个页面转过来的
+
+~~~java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//Content-Length获得请求的长度
+		int length = request.getIntHeader("Content-Length");
+		System.out.println("请求你的长度:"+length);
+		//Accept:获得MIME类型
+		String mime = request.getHeader("Accept");
+		System.out.println("MIME类型:"+mime);
+		//Referer:来路路径
+		String referer = request.getHeader("Referer");
+		System.out.println("来路路径:"+referer);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+~~~
+
+
+
