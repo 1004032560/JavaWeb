@@ -56,13 +56,11 @@ Tomcat 使用 Cookie 来维护 Session 对象的 ID 值；该 Cookie 的名字�
 
 ## 4、Session 常用方法
 
+添加设置属性值：`setAttribute(String name, Object object)`
 
+获取属性值：`getAttribute(String name)`，该返回值为 Object 类型
 
-设置值：`setAttribute(String name, Object object)`
-
-取值：`getAttribute(Object object)`
-
-删除值：`removeAttribute(String name)`
+删除属性值：`removeAttribute(String name)`
 
 
 
@@ -71,7 +69,7 @@ Tomcat 使用 Cookie 来维护 Session 对象的 ID 值；该 Cookie 的名字�
 ### 为什么要让 Session 失效：
 
 1. 会话对象时存储在服务器端的对象，一直存在需要占用一定的服务器资源
-2. 会话中往往保存着用户的一些数据
+2. 会话中往往保存着用户的一些数据，如果一直有效，存在一定安全隐患
 
 
 
@@ -81,17 +79,17 @@ Tomcat 使用 Cookie 来维护 Session 对象的 ID 值；该 Cookie 的名字�
 
 
 
-2. 在 XML 中配置使 Session 失效：
+2. 在 XML 中配置使 Session 失效（单位：分钟）：
 
 ~~~xml
 <session-config>
-	<session-timeout>1</session-timeout>
+	<session-timeout>50</session-timeout>
 </session-config>
 ~~~
 
 
 
-3. 通过调用方法使 Session 失效：
+3. 通过调用 HttpSession 接口中的方法使 Session 失效：
 
 `invalidate()`：会立刻销毁 Session 对象
 
@@ -100,9 +98,9 @@ Tomcat 使用 Cookie 来维护 Session 对象的 ID 值；该 Cookie 的名字�
 session.invalidate();
 ~~~
 
-`setMaxInvalidate()`：会立刻销毁 Session 对象
+`setMaxInvalidate(int interval)`：设置最大销毁时间（单位：秒），超过时间之后，会立刻销毁 Session 对象
 
 ~~~java
 //设置 Session 立即失效
-session.invalidate();
+session.invalidate(24*3600);
 ~~~
