@@ -13,12 +13,12 @@ Cookie的特点：
 
 ## 2、Cookie 的生命域
 
-1. name：Cookie 的名字
-2. content：Cookie 的值
-3. domain：Cookie 的域
-4. path：
-5. create：Cookie 的创建时间
-6. expired：Cookie 的失效时间
+1. name：名字
+2. content：值
+3. domain：域
+4. path：路径
+5. create：创建时间
+6. expired：失效时间
 7. 最大生命时间：Cookie 的失效时间减去 Cookie 创建时间
 
 
@@ -37,13 +37,9 @@ Cookie的特点：
 
 
 
+## 4、在响应中设置Cookie
 
-
-
-
-## 4、在响应中设置 Cookie
-
-
+通过 `response.addCookie(cookie)`，将创建好的 Cookie 对象保存到客户端。
 
 ~~~java
 //创建 Cookie 对象
@@ -54,21 +50,27 @@ response.addCookie(cookie);
 
 
 
+## 5、Cookie最大生命时间
+
+1. 将 Servlet 创建好的 Cookie 对象通过 `response.addCookie(cookie)` 放到 response 对象中
+2. 如果没有设置最大生命时间的情况下，浏览器接收到 Cookie 对象后存储到浏览器的本地 Cookie 缓存中，关闭浏览器之后缓存就没有了，Cookie 也没有了
+3. 如果设置了最大生命时间的情况下（如：`7*24*3600`），浏览器接收到 Cookie 对象后存储到浏览器的本地 Cookie 缓存和硬盘中，关闭浏览器缓存就没有了，Cookie 还存在，下次开启浏览器访问网站时 Cookie 还能使用
 
 
 
+## 6、获取请求中的 Cookie
 
-## 5、获取请求中的 Cookie
-
-
-
+1. 第一次请求：服务器将 Cookie 放到 response 对象中，让浏览器保存 Cookie 对象
 
 
 
+2. 第二次请求：浏览器会自动带 Cookie 对象一并发送到服务器
 
-## 6、获取请求中的 Cookie信息
 
-当
+
+## 7、获取请求中的Cookie信息
+
+当访问相同域，及路径时，没有超过有效时间的 Cookie 对象将自动通过请求发送到服务器端
 
 `Cookie[] getCookies()`：获取请求中所有的 Cookie 对象，返回数组对象
 
