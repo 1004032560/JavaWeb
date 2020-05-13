@@ -153,3 +153,24 @@ private void list(HttpServletRequest request, HttpServletResponse response) thro
 </html>
 ~~~
 
+
+
+## 3、分装分页工具类
+
+1. 创建一个 Page 类
+2. 设置 7 个成员变量
+3. 设置 getter 构造方法
+4. 创建构造方法传递参数，对 7 大成员计算赋值
+5. 使用工具类
+
+
+
+~~~
+<td colspan="3">
+     	<button onclick="paging(1)">首页</button>
+     	<button onclick="paging(<%=page1.getPrevPage()%>)">上一页</button>
+     	<button onclick="paging(<%=page1.getNextPage()%>)">下一页</button>
+     	<button onclick="paging(<%=page1.getPageCount()%>)">尾页</button>
+   	</td>
+~~~
+
