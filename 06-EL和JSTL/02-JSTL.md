@@ -146,7 +146,7 @@ scope属性可以省略：
 
 
 
-### 5.5、hoose/when/otherwise/标签
+### 5.5、choose/when/otherwise/标签
 
 语法：
 
