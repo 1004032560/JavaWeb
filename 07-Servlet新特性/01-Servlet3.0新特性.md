@@ -172,7 +172,7 @@ public void init(FilterConfig fConfig) throws ServletException {
 
 ~~~java
 //配置initParams
-@WebFilter(servletNames = "HelloServlet"s,
+@WebFilter(servletNames = "HelloServlet",
 			initParams = {@WebInitParam(name = "name",value = "looperFilter")}
 		)
 //获取initParams的值
