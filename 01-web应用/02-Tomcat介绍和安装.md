@@ -1,4 +1,4 @@
-## 4、Tomcat介绍和安装
+## 1、Tomcat介绍
 
 ### 4.1、Tomcat 定义：
 
@@ -26,25 +26,35 @@ Web 应用服务器，又称为 Servlet Container（Servlet 容器）
 
 
 
-### 4.5、Tomcat 安装：
+## 2、Tomcat下载
 
 1. 进入官网
 
+
+
 ![01](E:\1.soft\personalNotes\JavaWeb\images\20200427\01.png)
+
+
 
 2. 找到最新的版本
 
+
+
 ![02](E:\1.soft\personalNotes\JavaWeb\images\20200427\02.png)
+
+
 
 3. 下载对应操作系统的压缩包
 
 4. 下载本地之后解压（解压时路径中不要含中文）
 
+
+
 ![03](E:\1.soft\personalNotes\JavaWeb\images\20200427\03.png)
 
 
 
-### Tomcat 目录结构：
+## 3、Tomcat 目录结构
 
 ![04](E:\1.soft\personalNotes\JavaWeb\images\20200427\04.png)
 
@@ -64,7 +74,7 @@ work：jsp 代码编译后生成的 class 目录
 
 
 
-### 启动 Tomcat：
+## 4、启动 Tomcat：
 
 1. 启动前必须保证已经配置好 JDK 的环境变量
 2. 到 Tomcat 的 bin 目录下点击 `startup.bat` 启动

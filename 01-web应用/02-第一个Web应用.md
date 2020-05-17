@@ -7,7 +7,7 @@
 
 ## 2、Eclipse 中配置服务器
 
-1. 在 Eclipse 中找到`Window --- Show View --- Server`
+1. 在 Eclipse 中找到 `Window --- Show View --- Server`
 2. 底部工具栏中就会出现 Service
 
 
