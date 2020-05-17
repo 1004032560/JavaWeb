@@ -5,14 +5,10 @@
 
 
 
-
-
 ## 2、Eclipse 中配置服务器
 
 1. 在 Eclipse 中找到`Window --- Show View --- Server`
 2. 底部工具栏中就会出现 Service
-
-
 
 
 
@@ -54,26 +50,11 @@
 
 
 
-## 6、Servlet 特点
 
-### Servlet 家谱
-
-**二类二接口，3 + 2 方法**
-
-HttpServlet 类和 GenericServlet 类；Servlet 接口和 ServletConfig 接口。
-
-Servlet 接口的三个方法：init(参数)、service、destroy
-
-ServletConfig 接口的两个方法：getInitParameter、getServletContext
-
-### Servlet 生命周期
-
-构造方法实例化 Servlet
-
-调用
 
 
 
 
 
 ## 7、Eclipse 常用配置
+
