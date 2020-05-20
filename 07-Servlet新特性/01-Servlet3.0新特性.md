@@ -55,7 +55,7 @@ public class PrintServlet extends HttpServlet {
 
 `@Weblistener`
 
-`@MultpartConfig`
+`@MultipartConfig`
 
 ### 1.2.1、@WebServlet
 
