@@ -1,53 +1,51 @@
 ## 1、Ajax
 
-`Asynchronous javascript and xml`：异步的 javascritp 和 xml
+### 1.1、什么是Ajax
+
+`Asynchronous javascript and xml`：异步的 Javascritp 和 XML
 
 核心对象：通过 XMLHttpRequest 简称 xhr，实现局部刷新
 
+<br>
 
+### 1.2、Ajax思想
 
+使用 XMLHttpRequest 对象，与服务器交互，实现局部刷新。
 
+局部刷新：不提交整个页面，而是在页面的某个部分；例如：一个文本框或者按钮，发送请求，实现刷新。
 
-## 2、Ajax思想
+整体刷新：整个页面提交。
 
-使用 XMLHttpRequest 对象，与服务器交互，使用局部刷新
+<br>
 
-局部刷新：不提交整个页面，而是在页面的某个部分例如：一个文本框或者按钮，发送请求
+## 2、异步和同步
 
-整体刷新：整个页面提交
-
-
-
-## 3、异步和同步
-
-### 3.1、异步
+### 2.1、异步
 
 不等，上一步没做完，不等，继续做自己的
 
 特点：
 
-约定：和上一步约定好放数据的地方，
+约定：和上一步约定好放数据的地方
 
+<br>
 
-
-### 3.2、同步
+### 2.2、同步
 
 等待，上一步做完，一直等待
 
+<br>
 
+## 3、Ajax用法
 
-
-
-## 4、Ajax用法
-
-### 4.1、原生Ajax
+### 3.1、原生Ajax
 
 1. 创建 XMLHttpRequest 对象
-2. 
+2. 调用 open 方法，打开连接
+3. 使用回调函数接收返回的数据
+4. 发送请求
 
-~~~jsp
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+~~~html
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,15 +78,11 @@ function test(){
 </html>
 ~~~
 
+<br>
 
+### 3.2、jQuery Ajax
 
-
-
-
-
-### 4.2、jQuery Ajax
-
-#### 4.2.1、jQuery原生
+#### 3.2.1、jQuery原生
 
 ~~~jsp
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
@@ -107,9 +101,9 @@ function test(){
 </script>
 ~~~
 
+<br>
 
-
-#### 4.2.2、jQuery扩展
+#### 3.2.2、jQuery简化版
 
 ~~~jsp
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
